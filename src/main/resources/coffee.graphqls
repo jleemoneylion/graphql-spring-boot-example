@@ -1,0 +1,16 @@
+schema {
+    query: QueryType
+}
+
+type QueryType {
+    mocha(temperature: String): Mocha
+    latte(size: String): Latte
+}
+
+type Mocha {
+    temperature: String
+}
+
+type Latte {
+    size: String
+}
