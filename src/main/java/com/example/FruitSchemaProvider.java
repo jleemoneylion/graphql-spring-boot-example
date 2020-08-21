@@ -15,6 +15,8 @@ public class FruitSchemaProvider {
                     .type("QueryType", typeWiring -> typeWiring
                             .dataFetcher("apple", new AppleDataFetcher())
                             .dataFetcher("orange", new OrangeDataFetcher()))
+                    .type("Orange", typeWriting -> typeWriting
+                            .dataFetcher("color", new StaticDataFetcher("orange")))
                     .build();
 
             SchemaParser schemaParser = new SchemaParser();

@@ -12,5 +12,6 @@ type Apple {
 }
 
 type Orange {
+    color: String
     size: String
 }
